@@ -6,7 +6,7 @@ output: html_document
 ---
 ***
 
-The purpose of this repository is to hold a data-processing script and tidy data that cleans data downloaded from here:
+The purpose of this repository is to hold a data-processing script and tidy data that cleans data downloaded from here on 06/20/15:
 [Human Activity Recognition Using Smartphones](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
 
 The core data set contains Samsung Galaxy S II measurements from thirty volunteers aged 19-48.
