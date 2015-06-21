@@ -1,0 +1,33 @@
+---
+title: "Codebook for run_analysis.R"
+author: "Dana McDaniel"
+date: "June 21, 2015"
+output: html_document
+---
+***
+
+### Data-processing strategy for `run_analysis.R`
+1. Requirements as specified in the Coursera course are embedded within the script as comments in the form of `# STEP X  description of requirement`.
+2. Relevant data files area read from the unzipped data set.
+3. Test and Training data sets are merged together by subject id using the merge() function.
+4. We extracts some "pre-processed"" accellerometer and gyroscope data that's clearly labeled by mean() and std().
+5. Labels are added to identify which actions are "walking," "sitting," etc.
+6. A table of mean results for each activity and subject is created using aggregate().
+7. tidyData.txt is exported as tab-separated file.
+
+### Variables and their descriptions
+* `activityLabels` -- activity ids and their label as walking, sitting, etc
+* `features` -- measurement names as provided by the study data managers 
+* `finalData`-- complete merged datasets with taining data, test data, and labels
+* `preTinyData` -- temp. variable of finalData without their activity labels
+* `subjectTest` -- vector of subject IDs from test data set
+* `subjectTrain` -- vector of subject IDs from training data set
+* `testData` -- subject, x-data, and y-data from the test set merged together
+* `tidyData` -- final, avg. and stdev. summarized subject and activity measurements
+* `trainData`-- subject, x-data, and y-data from the training set merged together
+* `xTest` -- analytic data from x_Test.txt
+* `xTrain` -- analytic data from x_Train.txt
+* `yTest` -- analytic data from y_Test.txt
+* `yTrain` -- analytic data from y_Train.txt
+
+***

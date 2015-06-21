@@ -1,0 +1,32 @@
+---
+title: "Getting and Cleaning Data Course Project Readme"
+author: "Dana McDaniel"
+date: "June 21, 2015"
+output: html_document
+---
+***
+
+The purpose of this repository is to hold a data-processing script and tidy data that cleans data downloaded from here:
+[Human Activity Recognition Using Smartphones](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
+
+The core data set contains Samsung Galaxy S II measurements from thirty volunteers aged 19-48.
+All actions required to reproduce the data are saved in the file `run_analysis.R`.
+
+### Core files
+* `run_analysis.R`
+* `codebook.MD`
+* `readme.MD`
+
+### Overview for `run_analysis.R`
+1. Requirements as specified in the Coursera course are embedded within the script as comments in the form of `# STEP X  description of requirement`.
+2. Relevant data files area read from the unzipped data set.
+3. Test and Training data sets are merged together by subject id.
+4. We extracts some "pre-processed"" accellerometer and gyroscope data that's clearly labeled by mean() and std().
+5. Labels are added to identify which actions are "walking," "sitting," etc.
+6. Results are aggregated.
+7. tidyData.txt is exported as tab-separated file.
+
+### More information
+More information on interpreting the code from `Run_analysis.R` is found in `codebook.MD`
+
+***
