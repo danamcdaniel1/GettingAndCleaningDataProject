@@ -6,16 +6,14 @@ output: html_document
 ---
 ***
 
-The purpose of this repository is to hold a data-processing script and tidy data that cleans data downloaded from here on 06/20/15:
-[Human Activity Recognition Using Smartphones](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
-
-The core data set contains Samsung Galaxy S II measurements from thirty volunteers aged 19-48.
-All actions required to reproduce the data are saved in the file `run_analysis.R`.
+The purpose of this repository is to hold a data-processing script that cleans data from here
+[Human Activity Recognition Using Smartphones](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones).  Date of last download is 06/21/15.  The core data set contains Samsung Galaxy S II measurements from thirty volunteers aged 19-48.  All actions required to reproduce the data are saved in the file `run_analysis.R`.  A summarized tab-separated tidy data table is found in `tidyData.txt`.  To reproduce `run_analysis.R` on your computer, change the setwd() command at the top of the file to the unzipped UCI HAR Data Set folder location.
 
 ### Core files
 * `run_analysis.R`
 * `codebook.MD`
 * `readme.MD`
+* `tidyData.txt`
 
 ### Overview for `run_analysis.R`
 1. Requirements as specified in the Coursera course are embedded within the script as comments in the form of `# STEP X  description of requirement`.

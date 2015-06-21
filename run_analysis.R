@@ -46,4 +46,5 @@ tidyData     <- aggregate(preTinyData,
 tidyData     <- merge(tidyData, activityLabels, by = "activityid", all.x = TRUE)
 
 # Export the tidyData set 
+setwd("..")
 write.table(tidyData, "./tidyData.txt", row.names = F, sep='\t')
